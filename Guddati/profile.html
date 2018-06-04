@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url("pro.jpg");
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+
+        .modal-content {
+            background-color: black;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        p {
+            color: white
+        }
+
+        input {
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
+        <a href="landing.html" class="w3-bar-item w3-button">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <i class="fa fa-search" id="myBtn"></i>
+
+        </a>
+        <div id="myModal" class="modal">
+
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <p>Enter here..</p>
+                <input type="text" placeholder="Search.." name="search">
+            </div>
+
+        </div>
+
+        <a href="#" class="w3-bar-item w3-button">
+            <i class="fa fa-envelope" id="myBtn"></i>
+        </a>
+        
+
+
+        <a href="profile.html" class="w3-bar-item w3-button">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </a>
+
+        <a href="logout.html" class="w3-bar-item w3-button">
+            <i class="fa fa-close"></i>
+        </a>
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="pic_base">
+                <img src="marp.png" width=200 id="profile_pic" alt="">
+                <div class="icon_base">
+                    <a href="#" onclick="myfunction()">
+                        <i class="fa fa-pencil fa-2x" id="edit"></i>
+                    </a>
+                    <div id="disp">
+                        <p id="display" class="w3-text-black"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content_base">
+                <h1 id="title">Super Mario</h1>
+                <h2 id="profession">VideoGamer</h2>
+                <p id="content">
+                    Hi everyone I am Mario. I work for Nintendo at the Mushroom Kingdom. I have a brother, his name is Luigi. Sometimes we work
+                    together to save Princess Peach from the scary Bowser.
+                </p>
+
+                <marquee behavior="scroll" direction="right" scrollamount="5">
+                    <img src="mario.gif">
+                    <img src="mlogo.png" class="size">
+                    <img src="ll.png" class="size">
+                    <img src="l4.png" class="size">
+
+                </marquee>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
